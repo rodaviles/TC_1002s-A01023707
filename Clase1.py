@@ -1,1 +1,2 @@
-print("Hola desde Atom")
+name=input("Como te llamas? ")
+print(name)
