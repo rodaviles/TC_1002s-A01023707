@@ -2,7 +2,7 @@
 
 
 
-Este va a ser el repositorio de mis clases del repositorio
+Este va a ser el repositorio de mis clases el repositorio
 
 Este contiene:
 
