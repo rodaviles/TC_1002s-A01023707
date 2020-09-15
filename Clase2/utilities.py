@@ -1,3 +1,4 @@
+import numpy as np
 class Student():
     def _init_(self,name,last_name,major):
         self.name= name
@@ -7,7 +8,12 @@ class Student():
     def add_grades(self,grades):
         self.grades.append(grade)
         print("A grade of {} was added to de student {} {}".format(grade,self.name,self.last_name))
-rod= Student("Rodrigo","Aviles","IQ")
+    def get_average(self):
+        return np.mean(self.grades)
+
+
+
+rod= Student("Rodrigo","Beceiro","IQ")
 print(rod.major)
 print(rod.grades)
 rod add_grades (95)
