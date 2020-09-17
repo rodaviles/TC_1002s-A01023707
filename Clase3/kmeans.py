@@ -12,7 +12,7 @@ def close (puntos,centros):
     closest=[]
     clusters=[ [] for f in centros]
 
-    for 1, punto in enumerate(puntos):
+    for i, punto in enumerate(puntos):
         this_distance=[]
         for j,centro in enumerate(centros):
             this_distance.append(distance(punto,centro))
