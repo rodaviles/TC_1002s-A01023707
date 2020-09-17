@@ -1,6 +1,3 @@
-#Este va a ser mi repositorio
-
-
 
 Este va a ser el repositorio de mis clases, el repositorio contiene:
 
