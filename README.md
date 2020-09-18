@@ -15,4 +15,5 @@
 - utilities_pandas.py-> (Tablas Pandas)
 - kmeans_irirs.py ----> (K-Means (Iris))
 - visualizations.py --> (Archivo para visualizar)
+- kmeans_random.py ---> (K-Means (Random))
 - ¿pycache? ----------> (No se para que sirva)
