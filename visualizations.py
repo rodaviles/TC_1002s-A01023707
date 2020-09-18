@@ -1,3 +1,5 @@
+#Archivo de yuda para "K-Means (Iris)"
+
 import numpy as np
 import matplotlib.pyplot as plt
 import os
