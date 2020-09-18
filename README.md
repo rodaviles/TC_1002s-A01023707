@@ -9,4 +9,4 @@
 - utilities_pandas.py
 - kmeans_irirs.py
 - visualizations.py
-- ¿_py_cache?
+- ¿pycache?
