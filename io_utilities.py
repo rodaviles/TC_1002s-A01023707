@@ -1,18 +1,22 @@
 #io_utilities.py
-filepath= './data/iris.data'
+import pandas as pd
 
-def read_vanilla(filepath):
-    with open(filepath,'r') as fp:
-        data=fp.read()
-
-    data_lines = data.split('\n')
-    data_final= []
-
-
-    for line in data_lines:
-        data_final.append(line.split(','))
-
-    data_final= [f.split(',') for f in data_lines]
-    return data_final
-
-print(read_vanilla(filepath))
+def load_data(filename):
+    """
+    Reads a csv file and returns a list of lists
+    """
+    with open(filename,'r') as fp:
+        data = fp.read().split('\n')
+    data_new = [f.split(',') for f in data if f != ""]
+    data_formatted = []
+    for instance in data_new:
+        instance_new = []
+        for value in instance:
+            try:
+                instance_new.append(float(value))
+            except ValueError:
+                instance_new.append(value)
+        data_formatted.append(instance_new)
+    return data_formatted
+filename= './data/iris.data'
+print(load_data(filename))

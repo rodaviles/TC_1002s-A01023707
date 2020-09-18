@@ -26,8 +26,8 @@ def centers(clusters):
 
     for cluster in clusters:
         sum=0
-        for i in range(len(cluster)):
-            sum+= cluster[i]
+        for clusters in range(len(cluster)):
+            sum= sum+cluster[clusters]
 list_x = []
 list_y = []
 num = int(input("Please input the size of the lists \n"))
@@ -41,10 +41,12 @@ while c1<num:
     c1=c1+1
 
 
-print(list_x)
+print("The list looks like this\n{}".format(list_x))
 print(list_y)
 
-print("The distance is {}".format(distancia(list_x,list_y)))
-print("They are {} close".format(close(list_x,list_y)))
-print("The centers in x are {}".format(centers(list_x)))
-print("The centers in y are {}".format(centers(list_y)))
+print("\nThe distance list is \n{}".format(distancia(list_x,list_y)))
+print("\nThey closeness list is \n{}".format(close(list_x,list_y)))
+list_x=str(list_x)
+list_y=str(list_y)
+print("\nThe centers in x list is \n{}".format(centers(list_x)))
+print("\nThe centers in y list is \n{}".format(centers(list_y)))
